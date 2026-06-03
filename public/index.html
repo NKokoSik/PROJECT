@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Spot</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero-panel">
+        <div class="hero-badge">News Spot</div>
+        <h1>Новости на русском, красивый интерфейс, избранное</h1>
+        <p>Ищи новости по теме, сохраняй лучшие статьи и читай их позже.</p>
+      </header>
+
+      <section class="card search-card">
+        <form id="searchForm" class="search-form">
+          <div class="search-title">
+            <span>Поиск новостей</span>
+            <em>Пиши тему и нажимай «Найти»</em>
+          </div>
+          <div class="search-row">
+            <input id="searchInput" type="search" placeholder="Технологии, спорт, наука, игры..." autocomplete="off" />
+            <button type="submit">Найти</button>
+          </div>
+          <div class="search-hint">Новости приходят с NewsAPI через сервер, ключ хранится в `.env`.</div>
+        </form>
+      </section>
+
+      <section class="grid-panel">
+        <article class="card results-card">
+          <div class="card-header">
+            <div>
+              <h2>Результаты</h2>
+              <p class="subtitle">Последние статьи по запросу</p>
+            </div>
+            <span id="resultCount" class="badge">0</span>
+          </div>
+          <div id="newsContainer" class="cards"></div>
+        </article>
+
+        <article class="card saved-card">
+          <div class="card-header">
+            <div>
+              <h2>Избранное</h2>
+              <p class="subtitle">Сохрани, чтобы не потерять</p>
+            </div>
+            <span id="savedCount" class="badge badge-accent">0</span>
+          </div>
+          <div id="savedContainer" class="cards"></div>
+        </article>
+      </section>
+
+      <footer class="footer-panel">
+        <p>Интерфейс работает на чистом HTML, CSS и JavaScript. Сервер проксирует запросы к NewsAPI.</p>
+      </footer>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

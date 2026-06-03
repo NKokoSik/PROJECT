@@ -40,7 +40,7 @@ npm run dev
 4. Откройте в браузере:
 
 ```text
-http://localhost:3000
+http://localhost:6767
 ```
 
 ## Функции
