@@ -11,9 +11,10 @@ News Spot позволяет искать новости через API, доб�
 1. Склонируйте репозиторий:
 
 ```bash
-git clone <URL_репозитория>
-cd <папка_проекта>
+git clone https://github.com/NKokoSik/PROJECT
+cd PROJECT
 ```
+
 
 2. Установите зависимости:
 
